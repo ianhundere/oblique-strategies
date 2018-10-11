@@ -1,0 +1,45 @@
+html, body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.quoteDisplay{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    font-size: 28px;
+    margin: 30px;
+}
+
+img {
+    display: block;
+    image-rendering: optimizeSpeed;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(56, 91, 58) 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
