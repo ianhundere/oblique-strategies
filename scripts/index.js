@@ -1,4 +1,3 @@
-console.log('oi boi');
 // Classes are for CSS stlying
 // "data attributes" are for JS
 
@@ -189,16 +188,21 @@ const strat = ['(Organic) machinery',
     'Would anyone want it?',
     'You are an engineer',
     'You can only make one dot at a time',
-    'You don\'t have to be ashamed of using your own ideas']
+    'You don\'t have to be ashamed of using your own ideas'];
 
 // addEventListener accepts 2 arguments:
 // - a string that identifies the kind of event to listen for
 // - a function that says what to do when the event happens
-triggerElement.addEventListener('click', () => {
-    console.log('Hello addEventListener!');
-    const newStrat = strat.pop();
-    outputElement.textContent = newStrat;
+function randomStrat(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; 
+    }
+}
 
+triggerElement.addEventListener('click', () => {
+    randomStrat(strat);
+    outputElement.textContent = strat[0];
 });
 
 
