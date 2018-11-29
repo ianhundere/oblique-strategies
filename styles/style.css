@@ -1,45 +1,127 @@
-html, body {
-    display: flex;
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body, header, nav, h1, a, ul, li, strong, main,
+button, i, section, img, div, h2, p, form, fieldset,
+label, input, textarea, span, article, footer, time, small {
     margin: 0;
+    border: 0;
     padding: 0;
-    width: 100%;
+    outline: 0;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    box-sizing: inherit;
+    color: inherit;
+    background: transparent;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
+ul, li {
+    list-style: none;
 }
 
-body {
-    background-color: darkkhaki;
+html {
+    background: rgb(33,33,33);
+}
+
+.button, span {
+    cursor: pointer;
+}
+
+.page-content {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 100%;
-
+    align-items: center;
+    color: rgb(222, 222, 222);
 }
 
-.buttonContainer {
-    text-align: center;
+.page-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin: 60px;
+    margin-bottom: 30px;
 }
 
-.quoteDisplay{
+.page-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.card {
+    width: 440px;
+    height: 230px;
+    border: solid 1px black;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(245,245,245);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(33,33,33);
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#strategy-card {
+    justify-content: center;
+}
+
+.app-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    font-size: 40px;
+    margin: 60px 40px 0 40px;
+}
+
+.attribute {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
-    text-align: center;
-    height: 30px;
-    font-size: 28px;
+    font-size: 16px;
     margin: 30px;
 }
 
-img {
+#modal-background {
     display: block;
-    image-rendering: optimizeSpeed;
-    height: 300px;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid rgb(56, 91, 58) 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10;
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close-button {
+    font-size: 30px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+}
+
+.close-button-flex {
+    align-self: flex-start;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
 }

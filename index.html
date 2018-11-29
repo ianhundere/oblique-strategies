@@ -6,19 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oblique Strategies</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1>Oblique Strategies</h1>
-        <div class="buttonContainer">
-        <button data-oblique>Inspire Me</button>
+    <div class="page-content">
+        <div class="page-title">Oblique Strategies</div>
+        <div id="strategy-card" class="card" data-output></div>
+        <div>
+            <img data-img class="card">
         </div>
-    <div class="quoteDisplay" data-output>
-
-    </div>
-    <div>
-        <img data-img>
+        <div class="page-text">
+            <p>Click a card or image to be inspired</p>
+        </div>
+        <div class="app-info links">
+            <span id="open-button"><i class="fas fa-question"></i></span>
+        </div>
+        <div class="app-info">
+            <ul class="links">
+                <a href="https://ianhundere.com">
+                    <i class="fas fa-home"></i></a>
+                <a href=" https://github.com/ianhundere/oblique-strategies">
+                    <i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ianhundere/">
+                    <i class="fab fa-linkedin"></i></a>
+            </ul>
+            <a class="attribute" href="../index.html">
+                Built by Ian Hundere, 2018</a>
+        </div>
+        <div id="modal-background">
+            <div id="modal" class="card">
+                <div class="close-button-flex">
+                    <span id="close-button">&times;</span></div>
+                <div class="card-title">OBLIQUE STRATEGIES</div>
+                <div>Over one hundred worthwhile dilemmas</div>
+                </br>
+                <div><br>
+                    <p>'Oblique Strategies is a card-based method for promoting creativity jointly created by Brian Eno
+                        and Peter Schmidt, first published in 1975. Each card offers a challenging constraint intended
+                        to help artists break creative blocks by encouraging lateral thinking.'</p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="scripts/index.js"></script>
 </body>
