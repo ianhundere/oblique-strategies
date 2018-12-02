@@ -11,13 +11,11 @@ const outputElement = document.querySelector("[data-output]");
 outputElement.addEventListener("click", () => {
     randomStrat(strat);
     outputElement.textContent = strat[0].text;
-    // outputImg.src = strat[0].url;
     outputImg.setAttribute("src", strat[0].url);
 });
 outputImg.addEventListener("click", () => {
     randomStrat(strat);
     outputElement.textContent = strat[0].text;
-    // outputImg.src = strat[0].url;
     outputImg.setAttribute("src", strat[0].url);
 });
 
@@ -757,9 +755,4 @@ closeButton.addEventListener('click', (e) => {
 
 openButton.addEventListener('click', (e) => {
     modalBackground.style.display = "";
-});
-
-const card = document.getElementById('strategy-card');
-card.addEventListener('click', () => {
-    card.innerHTML = Object(_card__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
